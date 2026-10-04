@@ -7,7 +7,7 @@
 
 This appendix gathers the fenced SQL, shell, psql, and JavaScript examples from the 16 core chapters. The examples stay grouped by the chapter where they are explained.
 
-## Chapter 1: 1. PostgreSQL foundations
+## Chapter 1: PostgreSQL foundations
 
 [Open the chapter](01-postgresql-foundations.md)
 
@@ -61,7 +61,7 @@ SELECT 'PostgreSQL is ready' AS status,
 \timing
 ~~~
 
-## Chapter 2: 2. Databases, schemas, and tables
+## Chapter 2: Databases, schemas, and tables
 
 [Open the chapter](02-databases-schemas-and-tables.md)
 
@@ -137,7 +137,7 @@ ALTER TABLE store.products
 ADD COLUMN description text;
 ~~~
 
-## Chapter 3: 3. Selecting, filtering, and sorting
+## Chapter 3: Selecting, filtering, and sorting
 
 [Open the chapter](03-selecting-filtering-and-sorting.md)
 
@@ -232,7 +232,7 @@ ORDER BY created_at DESC, id DESC
 LIMIT 20;
 ~~~
 
-## Chapter 4: 4. Expressions, functions, and dates
+## Chapter 4: Expressions, functions, and dates
 
 [Open the chapter](04-expressions-functions-and-dates.md)
 
@@ -315,7 +315,7 @@ GROUP BY local_month
 ORDER BY local_month;
 ~~~
 
-## Chapter 5: 5. Joins and relationships
+## Chapter 5: Joins and relationships
 
 [Open the chapter](05-joins-and-relations.md)
 
@@ -401,7 +401,7 @@ GROUP BY c.id
 ORDER BY c.id;
 ~~~
 
-## Chapter 6: 6. Aggregation and grouping
+## Chapter 6: Aggregation and grouping
 
 [Open the chapter](06-aggregation-and-grouping.md)
 
@@ -475,7 +475,7 @@ GROUP BY customer_id
 ORDER BY customer_id;
 ~~~
 
-## Chapter 7: 7. Subqueries, CTEs, and set operations
+## Chapter 7: Subqueries, CTEs, and set operations
 
 [Open the chapter](07-subqueries-ctes-and-set-operations.md)
 
@@ -574,7 +574,7 @@ SELECT 'support@example.test'::text AS contact
 ORDER BY contact;
 ~~~
 
-## Chapter 8: 8. Inserts, updates, deletes, and transactions
+## Chapter 8: Inserts, updates, deletes, and transactions
 
 [Open the chapter](08-inserts-updates-deletes-and-transactions.md)
 
@@ -671,7 +671,7 @@ ROLLBACK TO SAVEPOINT before_optional_change;
 COMMIT;
 ~~~
 
-## Chapter 9: 9. Keys, constraints, and data integrity
+## Chapter 9: Keys, constraints, and data integrity
 
 [Open the chapter](09-keys-constraints-and-data-integrity.md)
 
@@ -733,7 +733,7 @@ ALTER TABLE store.orders
 VALIDATE CONSTRAINT orders_status_check;
 ~~~
 
-## Chapter 10: 10. Indexes and query plans
+## Chapter 10: Indexes and query plans
 
 [Open the chapter](10-indexes-and-query-plans.md)
 
@@ -803,7 +803,7 @@ LIMIT 20;
 ANALYZE store.orders;
 ~~~
 
-## Chapter 11: 11. Views and generated data
+## Chapter 11: Views and generated data
 
 [Open the chapter](11-views-and-generated-data.md)
 
@@ -864,7 +864,7 @@ ADD COLUMN IF NOT EXISTS normalized_sku text
 GENERATED ALWAYS AS (lower(sku)) STORED;
 ~~~
 
-## Chapter 12: 12. JSON and JSONB
+## Chapter 12: JSON and JSONB
 
 [Open the chapter](12-json-and-jsonb.md)
 
@@ -932,7 +932,7 @@ WHERE sku = 'MUG-01'
 RETURNING sku, attributes;
 ~~~
 
-## Chapter 13: 13. PL/pgSQL functions and triggers
+## Chapter 13: PL/pgSQL functions and triggers
 
 [Open the chapter](13-plpgsql-functions-and-triggers.md)
 
@@ -1001,7 +1001,7 @@ FOR EACH ROW
 EXECUTE FUNCTION store.set_product_updated_at();
 ~~~
 
-## Chapter 14: 14. Roles, privileges, and maintenance
+## Chapter 14: Roles, privileges, and maintenance
 
 [Open the chapter](14-roles-privileges-and-maintenance.md)
 
@@ -1063,7 +1063,7 @@ WHERE datname = current_database()
 ORDER BY pid;
 ~~~
 
-## Chapter 15: 15. Node.js and PostgreSQL
+## Chapter 15: Node.js and PostgreSQL
 
 [Open the chapter](15-nodejs-and-postgresql.md)
 
@@ -1124,13 +1124,13 @@ const unsafeSql = "SELECT id FROM store.customers WHERE email = '" + email + "'"
 ### Sample 5
 
 ~~~js
-const sortColumns = {
-  name: 'name',
-  price: 'price'
-};
+const sortColumns = new Map([
+  ['name', 'name'],
+  ['price', 'price']
+]);
 
 function productSortSql(requestedSort) {
-  const column = sortColumns[requestedSort] ?? sortColumns.name;
+  const column = sortColumns.get(requestedSort) ?? 'name';
   return 'SELECT id, name, price FROM store.products ORDER BY ' + column + ', id';
 }
 ~~~
@@ -1184,7 +1184,7 @@ async function createOrder({ customerId, productId, quantity }) {
 }
 ~~~
 
-## Chapter 16: 16. Capstone: order management database
+## Chapter 16: Capstone: order management database
 
 [Open the chapter](16-capstone-order-management-database.md)
 
@@ -1345,18 +1345,6 @@ async function createCapstoneOrder({ customerId, productId, quantity }) {
   }
 }
 ~~~
-
-## Chapter 98: 
-
-[Open the chapter](98-all-code-samples.md)
-
-This chapter has no fenced code samples.
-
-## Chapter 99: 
-
-[Open the chapter](99-complete-q-and-a.md)
-
-This chapter has no fenced code samples.
 
 ---
 
