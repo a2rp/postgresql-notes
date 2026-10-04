@@ -141,5 +141,5 @@ The cursor values must come from the last row shown on the previous page. The or
 
 ---
 
-| [Previous: Databases, schemas, and tables](02-databases-and-schemas-and-tables.md) | [Notes index](../README.md) | [Next: Expressions, functions, and dates](04-expressions-functions-and-dates.md) |
+| [Previous: Databases, schemas, and tables](02-databases-schemas-and-tables.md) | [Notes index](../README.md) | [Next: Expressions, functions, and dates](04-expressions-functions-and-dates.md) |
 |:--|:--:|--:|

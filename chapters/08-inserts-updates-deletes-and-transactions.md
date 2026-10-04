@@ -144,7 +144,7 @@ SELECT FOR UPDATE locks selected rows until the transaction ends. Use it when a 
 - [PostgreSQL: INSERT](https://www.postgresql.org/docs/18/sql-insert.html)
 - [PostgreSQL: UPDATE](https://www.postgresql.org/docs/18/sql-update.html)
 - [PostgreSQL: DELETE](https://www.postgresql.org/docs/18/sql-delete.html)
-- [PostgreSQL: Transactions](https://www.postgresql.org/docs/18/tutorial-transactions.html)
+- [PostgreSQL: BEGIN](https://www.postgresql.org/docs/18/sql-begin.html)
 - [PostgreSQL: Concurrency control](https://www.postgresql.org/docs/18/mvcc.html)
 
 ---

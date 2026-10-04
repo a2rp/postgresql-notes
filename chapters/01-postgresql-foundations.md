@@ -110,9 +110,9 @@ Connect to study_store, print the server version and current role, then quit. Co
 
 - [PostgreSQL: What is PostgreSQL?](https://www.postgresql.org/docs/18/intro-whatis.html)
 - [PostgreSQL: psql](https://www.postgresql.org/docs/18/app-psql.html)
-- [PostgreSQL: Connecting to a database](https://www.postgresql.org/docs/18/tutorial-start.html)
+- [PostgreSQL: Connecting to a database](https://www.postgresql.org/docs/18/libpq-connect.html)
 
 ---
 
-| [Previous: Notes index](../README.md) | [Notes index](../README.md) | [Next: Databases, schemas, and tables](02-databases-and-schemas.md) |
+| [Previous: Notes index](../README.md) | [Notes index](../README.md) | [Next: Databases, schemas, and tables](02-databases-schemas-and-tables.md) |
 |:--|:--:|--:|

@@ -84,13 +84,13 @@ const unsafeSql = "SELECT id FROM store.customers WHERE email = '" + email + "'"
 Parameters represent values, not table or column names. If a sort column must be chosen dynamically, map a known user choice to a fixed allowlist of SQL fragments and keep values parameterized.
 
 ~~~js
-const sortColumns = {
-  name: 'name',
-  price: 'price'
-};
+const sortColumns = new Map([
+  ['name', 'name'],
+  ['price', 'price']
+]);
 
 function productSortSql(requestedSort) {
-  const column = sortColumns[requestedSort] ?? sortColumns.name;
+  const column = sortColumns.get(requestedSort) ?? 'name';
   return 'SELECT id, name, price FROM store.products ORDER BY ' + column + ', id';
 }
 ~~~
