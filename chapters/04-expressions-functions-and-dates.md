@@ -129,3 +129,4 @@ to_char is useful for presentation, but formatted text should not be used as the
 ---
 
 | [Previous: Selecting, filtering, and sorting](03-selecting-filtering-and-sorting.md) | [Notes index](../README.md) | [Next: Joins and relationships](05-joins-and-relations.md) |
+|:--|:--:|--:|

@@ -216,3 +216,4 @@ The foreign key rejects an unknown customer, while the CHECK constraint rejects 
 ---
 
 | [Previous: Node.js and PostgreSQL](15-nodejs-and-postgresql.md) | [Notes index](../README.md) | [Next: All code samples](98-all-code-samples.md) |
+|:--|:--:|--:|

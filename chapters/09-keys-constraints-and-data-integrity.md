@@ -122,3 +122,4 @@ This status rule is useful only if these are the complete status values the appl
 ---
 
 | [Previous: Inserts, updates, deletes, and transactions](08-inserts-updates-deletes-and-transactions.md) | [Notes index](../README.md) | [Next: Indexes and query plans](10-indexes-and-query-plans.md) |
+|:--|:--:|--:|

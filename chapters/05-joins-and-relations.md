@@ -130,3 +130,4 @@ ORDER BY c.id;
 ---
 
 | [Previous: Expressions, functions, and dates](04-expressions-functions-and-dates.md) | [Notes index](../README.md) | [Next: Aggregation and grouping](06-aggregation-and-grouping.md) |
+|:--|:--:|--:|

@@ -150,3 +150,4 @@ SELECT FOR UPDATE locks selected rows until the transaction ends. Use it when a 
 ---
 
 | [Previous: Subqueries, CTEs, and set operations](07-subqueries-ctes-and-set-operations.md) | [Notes index](../README.md) | [Next: Keys, constraints, and data integrity](09-keys-constraints-and-data-integrity.md) |
+|:--|:--:|--:|

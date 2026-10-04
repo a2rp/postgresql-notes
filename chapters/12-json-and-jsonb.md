@@ -119,3 +119,4 @@ This update replaces the stored JSONB document value. Validate input shape and a
 ---
 
 | [Previous: Views and generated data](11-views-and-generated-data.md) | [Notes index](../README.md) | [Next: PL/pgSQL functions and triggers](13-plpgsql-functions-and-triggers.md) |
+|:--|:--:|--:|

@@ -106,3 +106,4 @@ Generated columns are not a replacement for a normal column when an application 
 ---
 
 | [Previous: Indexes and query plans](10-indexes-and-query-plans.md) | [Notes index](../README.md) | [Next: JSON and JSONB](12-json-and-jsonb.md) |
+|:--|:--:|--:|

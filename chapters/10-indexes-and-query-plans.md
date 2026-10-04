@@ -123,3 +123,4 @@ Do not compare only the cost number between unrelated databases. Cost is an esti
 ---
 
 | [Previous: Keys, constraints, and data integrity](09-keys-constraints-and-data-integrity.md) | [Notes index](../README.md) | [Next: Views and generated data](11-views-and-generated-data.md) |
+|:--|:--:|--:|

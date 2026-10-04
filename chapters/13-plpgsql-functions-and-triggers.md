@@ -120,3 +120,4 @@ Functions run with invoker privileges by default. SECURITY DEFINER changes the p
 ---
 
 | [Previous: JSON and JSONB](12-json-and-jsonb.md) | [Notes index](../README.md) | [Next: Roles, privileges, and maintenance](14-roles-privileges-and-maintenance.md) |
+|:--|:--:|--:|

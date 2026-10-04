@@ -116,3 +116,4 @@ An aggregate FILTER condition is not a substitute for choosing the correct rows 
 ---
 
 | [Previous: Joins and relationships](05-joins-and-relations.md) | [Notes index](../README.md) | [Next: Subqueries, CTEs, and set operations](07-subqueries-ctes-and-set-operations.md) |
+|:--|:--:|--:|

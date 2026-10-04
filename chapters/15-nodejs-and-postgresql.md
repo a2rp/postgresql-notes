@@ -180,3 +180,4 @@ JSON and JSONB values are parsed into JavaScript values. PostgreSQL timestamps a
 ---
 
 | [Previous: Roles, privileges, and maintenance](14-roles-privileges-and-maintenance.md) | [Notes index](../README.md) | [Next: Capstone: order management database](16-capstone-order-management-database.md) |
+|:--|:--:|--:|

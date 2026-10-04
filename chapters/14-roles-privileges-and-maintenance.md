@@ -116,3 +116,4 @@ VACUUM cannot run inside a transaction block. VACUUM FULL rewrites a table and t
 ---
 
 | [Previous: PL/pgSQL functions and triggers](13-plpgsql-functions-and-triggers.md) | [Notes index](../README.md) | [Next: Node.js and PostgreSQL](15-nodejs-and-postgresql.md) |
+|:--|:--:|--:|

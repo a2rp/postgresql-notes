@@ -148,3 +148,4 @@ INTERSECT returns rows present in both results. EXCEPT returns rows from the fir
 ---
 
 | [Previous: Aggregation and grouping](06-aggregation-and-grouping.md) | [Notes index](../README.md) | [Next: Inserts, updates, deletes, and transactions](08-inserts-updates-deletes-and-transactions.md) |
+|:--|:--:|--:|
